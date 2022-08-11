@@ -14,14 +14,130 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
+  background-image: url(../images/bg-mobile.svg);
+  background-color: var(--violet);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-/* ------------------Start Footer------------------ */
+main {
+  margin: 38px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ------------------Section 1------------------ */
+.section1 .images-container .logo-container {
+  width: 42%;
+}
+.section1 .images-container .logo {
+  max-width: 250px;
+}
+.section1 .images-container .illustration {
+  margin-top: 62px;
+  max-width: 696px;
+}
+/* ------------------Section 2------------------ */
+.section2 {
+  max-width: 696px;
+  text-align: center;
+  color: white;
+}
+.section2 h1 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 64px;
+  font-size: 25px;
+}
+.section2 p {
+  line-height: 23px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.section2 button {
+  border: none;
+  color: var(--violet);
+  height: 43px;
+  width: 200px;
+  border-radius: 20px;
+  font-size: 13px;
+  box-shadow: 4px 5px 13px -5px rgba(0, 0, 0, 0.6);
+}
+.section2 button:hover {
+  background: var(--soft-magenta);
+  color: white;
+}
+.section2 .social-icons {
+  margin-top: 64px;
+  text-align: center;
+}
+.section2 .social-icons .icons-container {
+  width: 110px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.section2 .social-icons .fa-brands {
+  border: 1px solid white;
+  color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding-top: 7px;
+}
+.section2 .social-icons .fa-brands:hover {
+  color: var(--soft-magenta);
+  border: 1px solid var(--soft-magenta);
+}
+/* ------------------Footer------------------ */
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
 }
-/* ------------------End Footer------------------ */
+/* °°°°°°°°°°°°°°°°°°°°°°(>=1440px)°°°°°°°°°°°°°°°°°°°°°° */
+@media only screen and (min-width: 1440px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: unset;
+  }
+  main {
+    margin: 57px 80px 40px 75px;
+    flex-direction: row;
+  }
+  /* ------------------Section 1------------------ */
+  .section1 .images-container .illustration {
+    margin-top: 96px;
+  }
+  /* ------------------Section 2------------------ */
+  .section2 {
+    height: 512px;
+    width: 520px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 59px;
+    margin-top: calc(248px - 57px);
+  }
+  .section2 h1 {
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 39px;
+    margin: 0px;
+    line-height: 55px;
+  }
+  .section2 p {
+    margin-top: 0px;
+    margin-bottom: 24px;
+    font-size: 18px;
+  }
+  .section2 button {
+    font-size: 20px;
+    height: 56px;
+    border-radius: 30px;
+  }
+  .section2 .social-icons {
+    margin-top: 142px;
+    align-self: flex-end;
+  }
+}
