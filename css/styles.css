@@ -29,7 +29,7 @@ main {
 .section1 .images-container .logo-container {
   width: 42%;
 }
-.section1 .images-container .logo {
+.section1 .images-container .logo-container .logo {
   max-width: 250px;
 }
 .section1 .images-container .illustration {
@@ -106,6 +106,9 @@ main {
     flex-direction: row;
   }
   /* ------------------Section 1------------------ */
+  .section1 .images-container .logo-container {
+    margin-top: -38px;
+  }
   .section1 .images-container .illustration {
     margin-top: 96px;
   }
